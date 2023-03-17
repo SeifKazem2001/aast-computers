@@ -1,0 +1,14 @@
+6) Output in (a) : A's no-args constructor is invoked
+
+problem that arises in (b) : no super() to carry all the class A parameters
+
+
+7) line 5 needs to declare this.radius
+
+Missing Super in constructor class B
+
+this.length = length line 22
+
+8) Override
+
+9) No

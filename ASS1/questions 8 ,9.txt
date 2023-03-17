@@ -1,0 +1,3 @@
+
+q8_ It protects an object from unwanted access by clients. This allows access to a level without revealing the complex details below that level. It reduces human errors. Simplifies the maintenance of the application.
+q9- id is non static so can't be access by the name of the class 

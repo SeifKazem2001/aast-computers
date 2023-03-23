@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> max=new ArrayList<>();
+        Scanner input= new Scanner(System.in);
+        for(int i=0; i<5;i++){
+            max.add(input.nextInt());
+        }
+        System.out.println(maxsnuber(max));
+        System.out.println(sort(max));
+
+
+    }
+    public  static  int   maxsnuber(ArrayList<Integer>  x){
+        int max=0;
+        for (int i=0;i<x.size();i++){
+            if (max<x.get(i)){
+                max=x.get(i);
+            }
+        }
+        return max;
+
+    }
+    public static  ArrayList<Integer> sort (ArrayList<Integer> x ){
+int flag;
+        for (int i=0;i<x.size();i++){
+
+            for(int j=0; j<x.size();j++){
+            if (x.get(i)<x.get(j)) {//i=53,j=1,8,7
+                flag=x.get(i);
+                x.set(i,x.get(j));
+                x.set(j,flag);
+
+            }
+            }
+        }
+        return x;
+
+    }
+}
